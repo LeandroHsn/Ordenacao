@@ -1,9 +1,9 @@
 public class Ordenacao {
 
     // algoritmo de inserção
-    public static void insertionSort(int[] vet) {
+    public static void insertionSort(int[] vet, int posicaoFinal, int posicaoInicial) {
         int i, j, chave = 0;
-        for (i = 1; i < vet.length; i++) {
+        for (i = posicaoFinal; i < posicaoInicial; i++) {
             chave = vet[i];
             j = i - 1;
             // vet[0] = x;

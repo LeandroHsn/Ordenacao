@@ -19,6 +19,26 @@ public class App {
 
         System.out.println("\n\n***************** Exercicio 2 *****************\n");
 
+        int[] vetorInsertionSort = { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
+        int[] vetorInsertionSort2 = { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
+
+        System.out.print("Vetor sem tratamento: ");
+        for (int i : vetorInsertionSort) {
+            System.out.print(i + " ");
+        }
+
+        Ordenacao.insertionSort(vetorInsertionSort, 1, 10);
+        System.out.print("\nVetor com tratamento insertionSort (posição 1 até a 10): ");
+        for (int i : vetorInsertionSort) {
+            System.out.print(i + " ");
+        }
+
+        Ordenacao.insertionSort(vetorInsertionSort2, 1, 5);
+        System.out.print("\nVetor com tratamento insertionSort (posição 1 até a 5): ");
+        for (int i : vetorInsertionSort2) {
+            System.out.print(i + " ");
+        }
+
         /*
          * 3) Para o algoritmo quicksort desenvolvido durante a aula, faça as seguintes
          * alterações: a. Implemente o método particiona e coloque no seu escopo toda a
@@ -28,7 +48,7 @@ public class App {
          * através do cálculo da mediana;
          */
 
-        System.out.println("\n***************** Exercicio 3 *****************\n");
+        System.out.println("\n\n***************** Exercicio 3 *****************\n");
 
         int[] vetorNormal = { 3, 5, 7, 1, 6, 2, 8, 9, 4, 10 };
         Ordenacao.quickSortRecursivo(vetorNormal, 0, vetorNormal.length - 1);
