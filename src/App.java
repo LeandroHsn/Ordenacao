@@ -27,8 +27,8 @@ public class App {
             System.out.print(i + " ");
         }
 
-        Ordenacao.insertionSort(vetorInsertionSort, 1, 10);
-        System.out.print("\nVetor insertionSort com tratamento insertionSort (posição 1 até a 10): ");
+        Ordenacao.insertionSort(vetorInsertionSort, 1, 9);
+        System.out.print("\nVetor insertionSort com tratamento insertionSort (posição 1 até a 9): ");
         for (int i : vetorInsertionSort) {
             System.out.print(i + " ");
         }
