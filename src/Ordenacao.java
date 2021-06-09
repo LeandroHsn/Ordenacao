@@ -15,9 +15,9 @@ public class Ordenacao {
         }
     }
 
-    public static void selectionSort(int[] vet) {
+    public static void selectionSort(int[] vet, int posicaoFinal, int posicaoInicial) {
         int i, j, min, chave = 0;
-        for (i = 0; i <= vet.length - 1; i++) {
+        for (i = posicaoFinal; i <= posicaoInicial; i++) {
             min = i;
             for (j = i + 1; j <= vet.length - 1; j++) {
                 if (vet[j] < vet[min]) {
@@ -31,10 +31,10 @@ public class Ordenacao {
 
     }
 
-    public static void bubbleSort(int[] vet) {
+    public static void bubbleSort(int[] vet, int posicaoFinal, int posicaoInicial) {
         int i, j, chave = 0;
         int tam = vet.length - 1;
-        for (i = 0; i < tam; i++) {
+        for (i = posicaoFinal; i < posicaoInicial; i++) {
             for (j = tam; j > i; j--) {
                 if (vet[j] < vet[i]) {
                     chave = vet[i];
